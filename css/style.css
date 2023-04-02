@@ -1,0 +1,121 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2,
+h4 {
+    margin: 0;
+}
+
+.custom {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 6px 3px 0px black;
+}
+
+img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+}
+
+body {
+    background: linear-gradient(0deg, #556112,#005a31,#004d51,#003b5f,#062450);                              
+}
+
+.container-fluid {
+    position: relative;
+    bottom: 30px;
+    margin: 30px auto;
+    padding: 0 15px;
+    width: 60%;
+    background: rgb(255 255 255 / 10%);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 0.6em;
+    box-shadow: 0 1.8em 3.7em rgba(3, 46, 87, 0.2);
+    text-shadow: 2px 1px black;
+}
+
+.container {
+    width: 60%;
+    padding: 50px;
+    background: rgb(255 255 255 / 10%);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 0.6em;
+    box-shadow: 0 1.8em 3.7em rgba(3, 46, 87, 0.2);
+    text-shadow: 2px 1px black;
+}
+
+.card {
+    background-color: unset;
+    width: 17rem;
+}
+
+.btn-outline-light {
+    box-shadow: 3px 4px 4px black;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.btn-outline-light:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 3px 4px 4px green;
+}
+
+#app {
+    min-height: 100%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 1024px) {
+    .container-fluid,
+    .container {
+        width: 70%;
+    }
+
+    .custom {
+        font-size: calc(1.375rem + 1.5vw);
+        text-shadow: 3px 3px black;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-fluid,
+    .container {
+        width: 80%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .custom {
+        font-size: calc(1.375rem + 1.5vw);
+        text-shadow: 3px 3px black;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 13rem;
+    }
+
+    .custom {
+        font-size: calc(1.375rem + 1.5vw);
+        text-shadow: 3px 3px black;
+    }
+}
